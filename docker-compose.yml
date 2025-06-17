@@ -1,6 +1,6 @@
 version : '3.3'
 
-service:
+services:
   app:
     build: .
     container_name: node-app
@@ -10,10 +10,10 @@ service:
     volumes:
       - .:/app
     environment:
-      - NODE_ENV
+      - NODE_ENV=environment
     networks:
       - node-net
     
 networks:
   node=net:
-    driver: bidge
+    driver: bridge
