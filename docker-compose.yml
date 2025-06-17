@@ -1,0 +1,19 @@
+version : '3.8'
+
+service:
+  app:
+    build: .
+    container_name: node-app
+
+    ports: 
+      - "3000:3000"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV
+    networks:
+      - node-net
+    
+networks:
+  node=net:
+    driver: bidge
