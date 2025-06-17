@@ -12,8 +12,8 @@ services:
     environment:
       - NODE_ENV=environment
     networks:
-      - node-net
+      - web
     
-networks:
-  node=net:
-    driver: bridge
+# networks:
+#   node=net:
+#     driver: bridge
