@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist"
+  },
+  "lib": ["es2015"],
+  "include": ["src/app.ts", "src/index.html"]
+}
+
+// {
+//   "compilerOptions": {
+//     "target": "ES6",
+//     "module": "commonjs",
+//     "outDir": "./dist",        // Outputs compiled files into the 'dist' folder
+//     "rootDir": "./",           // The root folder of TypeScript files
+//     "esModuleInterop": true,
+//     "strict": true
+//   },
+//   "include": ["src/app.ts", "src/index.html"]
+// }
