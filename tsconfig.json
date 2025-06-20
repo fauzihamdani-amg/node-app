@@ -23,6 +23,7 @@
     "strict": true
   },
   "include": [
-    "src/**/*"  // Assuming your TypeScript files are in the 'src' folder
+    "*.ts",      // Include TypeScript files in the root folder
+    "*.tsx"      
   ],
 }
